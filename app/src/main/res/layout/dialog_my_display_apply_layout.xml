@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LineLayout.Normal">
+
+    <TextView
+        style="@style/TextView.DialogTitle"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.DialogSubTitle"
+            android:text="申请者    "/>
+
+        <TextView
+            style="@style/TextView.DialogSubContent"
+            android:id="@+id/apply_creator" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.DialogSubTitle"
+            android:text="申请类型" />
+        <TextView
+            style="@style/TextView.DialogSubContent"
+            android:id="@+id/apply_kind" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.DialogSubTitle"
+            android:text="申请目标" />
+        <TextView
+            style="@style/TextView.DialogSubContent"
+            android:id="@+id/apply_target" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.DialogSubTitle"
+            android:text="留言        " />
+        <TextView
+            style="@style/TextView.DialogSubContent"
+            android:id="@+id/apply_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView.DialogSubTitle"
+            android:text="相关信息" />
+        <TextView
+            style="@style/TextView.DialogSubContent"
+            android:id="@+id/apply_info" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#DEDEDE" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/Button.DialogButton"
+            android:id="@+id/info_fragment2_new_msg_bt_giveup"
+            android:text="拒     绝" />
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="match_parent"
+            android:background="#DEDEDE" />
+
+        <Button
+            style="@style/Button.DialogButton"
+            android:id="@+id/info_fragment2_new_msg_bt_commit"
+            android:text="接     受" />
+    </LinearLayout>
+
+</LinearLayout>

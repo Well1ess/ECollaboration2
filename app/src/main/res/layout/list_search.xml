@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/team_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="青葱岁月"
+        android:textColor="@color/grey"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/team_list_item_name">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可选"
+            android:padding="1dp"
+            android:background="@drawable/textview_search_normal"
+            android:layout_centerVertical="true"
+            android:textSize="8dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已满"
+            android:padding="1dp"
+            android:background="@drawable/textview_search_none"
+            android:layout_centerVertical="true"
+            android:textSize="8dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/hint"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="火爆"
+            android:padding="1dp"
+            android:background="@drawable/textview_search_hot"
+            android:layout_centerVertical="true"
+            android:textSize="8dp"
+            android:layout_margin="1dp"
+            android:textColor="@color/QQmusicILikeRed"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/team_list_item_name"
+        android:layout_below="@id/team_list_item_name"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_yes"
+            android:scaleX="0.4"
+            android:scaleY="0.4"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张丽华"
+            android:textColor="@color/subhead"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <TextView
+        android:focusableInTouchMode="false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申  请"
+        android:id="@+id/apply"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/stroke_colorprimary_2px_8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+</RelativeLayout>

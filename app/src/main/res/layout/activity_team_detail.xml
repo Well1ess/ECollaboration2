@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/bt_return"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:background="?android:attr/homeAsUpIndicator"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/title"
+                android:layout_centerInParent="true"
+                android:text="计划一"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:visibility="gone"
+        android:elevation="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/edit_panel"
+        android:background="@color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_menu_transparent">
+
+                <TextView
+                    android:id="@+id/bt_cancel"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="取消"
+                    android:clickable="true"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="?android:attr/selectableItemBackground" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/head"
+                android:layout_centerInParent="true"
+                android:text="消息编辑"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_menu_colorsky">
+
+                <TextView
+                    android:id="@+id/allselected"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="全选"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <ListView
+            android:background="@color/background"
+            android:id="@+id/message_container"
+            android:layout_width="match_parent"
+            android:dividerHeight="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            android:divider="@color/color_Fill_Trans"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0px"
+            android:background="#DEDEDE"/>
+
+        <RadioGroup
+            android:id="@+id/tab_main_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_team"
+                android:drawableTop="@drawable/menu_task_team_btn"
+                android:text="明细"
+                android:checked="true" />
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_edit"
+                android:drawableTop="@drawable/menu_task_edit_btn"
+                android:text="编辑" />
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_delete"
+                android:drawableTop="@drawable/menu_task_delete_btn"
+                android:text="删除" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <RadioGroup
+        android:visibility="gone"
+        android:id="@+id/tab_main_delete"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/RadioButton.Menu"
+            android:id="@+id/main_menu_edit_delete"
+            android:drawableTop="@drawable/menu_task_delete_btn"
+            android:text="删除" />
+    </RadioGroup>
+
+</android.support.design.widget.CoordinatorLayout>

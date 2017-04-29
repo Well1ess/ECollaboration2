@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/team_bg">
+
+    <TextView
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/evaluation_team_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="青葱岁月"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:elevation="1.5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/evaluation_team_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:elevation="4dp"
+        android:textSize="10sp"
+        android:text="E collaboration App"/>
+
+    <TextView
+        android:id="@+id/captain_team"
+        android:focusable="false"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@id/evaluation_team_project"
+        android:layout_alignLeft="@id/evaluation_team_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:textSize="10sp"
+        android:text="队长:张丽华"/>
+
+
+</RelativeLayout>

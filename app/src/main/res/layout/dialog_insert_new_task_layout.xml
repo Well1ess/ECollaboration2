@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LineLayout.Normal">
+
+    <TextView
+        style="@style/TextView.DialogTitle"
+        android:padding="15dp"
+        android:text="新任务"/>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_task_insert_panel"
+        android:background="@color/mask">
+        <LinearLayout
+            android:id="@+id/insert_plan_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:clickable="true"
+                android:background="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="开始时间"
+                        android:background="@drawable/left_radius_6dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:id="@+id/task_start_date"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/right_radius_6dp"
+                        android:src="@android:drawable/arrow_down_float"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="截止时间"
+                        android:background="@drawable/left_radius_6dp"
+                        android:textColor="@color/colorPrimary"
+                        android:padding="8dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:id="@+id/task_end_date"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/right_radius_6dp"
+                        android:src="@android:drawable/arrow_down_float"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background">
+
+                <EditText
+                    android:layout_margin="5dp"
+                    android:background="@drawable/edittext_bg_white"
+                    android:layout_weight="0"
+                    android:id="@+id/task_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="left" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="#DEDEDE" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            style="@style/Button.DialogButton"
+            android:id="@+id/info_fragment2_new_msg_bt_giveup"
+            android:text="取     消" />
+
+        <View
+            android:layout_width="1.0px"
+            android:layout_height="match_parent"
+            android:background="#DEDEDE" />
+
+        <Button
+            style="@style/Button.DialogButton"
+            android:id="@+id/info_fragment2_new_msg_bt_commit"
+            android:text="保      存" />
+    </LinearLayout>
+
+</LinearLayout>

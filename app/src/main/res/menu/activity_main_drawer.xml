@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/project_new_project"
+            android:icon="@mipmap/ic_myproj_presss"
+            android:title="新建项目" />
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/project_new_task"
+            android:icon="@mipmap/ic_evaluation"
+            android:title="新建任务" />
+    </group>
+
+</menu>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a29149.ecollaboration.model.project.apply.ApplyProjectActivity">
+
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:id="@+id/test_container2"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/bt_return"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@mipmap/ic_back"
+                android:tint="@color/white" />
+
+            <com.example.a29149.ecollaboration.widget.MyEditText
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:drawableRight="@mipmap/ic_clear"
+                android:ems="20"
+                android:drawableTint="@color/white"
+                android:textSize="15sp"
+                android:hint="请输入关键字"
+                android:textColor="@color/white"
+                android:textColorHint="@color/submenu_text_color"
+                android:id="@+id/key_value"
+                android:background="@drawable/edittext_primary_dark"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@mipmap/ic_search"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                android:id="@+id/project_search_bt" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scrollbars="none"
+
+            android:id="@+id/project_search"
+            android:divider="@drawable/divider_list_item_all_margin"
+            android:dividerHeight="2px"
+            />
+    </LinearLayout>
+
+</FrameLayout>

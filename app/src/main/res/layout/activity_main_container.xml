@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/FrameLayout.Normal"
+    android:id="@+id/activity_main_root">
+
+    <LinearLayout
+        style="@style/LineLayout.Normal">
+
+        <FrameLayout
+            android:id="@+id/main_tab_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <android.support.v4.app.FragmentTabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0" />
+        </android.support.v4.app.FragmentTabHost>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0px"
+            android:background="#DEDEDE"/>
+
+        <RadioGroup
+            android:id="@+id/tab_main_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_team"
+                android:drawableTop="@drawable/menu_1_btn"
+                android:text="团队"
+                android:checked="true" />
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_project"
+                android:drawableTop="@drawable/menu_2_btn"
+                android:text="管理" />
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_evaluation"
+                android:drawableTop="@drawable/menu_3_btn"
+                android:text="评估" />
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_msg"
+                android:drawableTop="@drawable/menu_4_btn"
+                android:text="动态" />
+
+            <RadioButton
+                style="@style/RadioButton.Menu"
+                android:id="@+id/main_menu_platform"
+                android:drawableTop="@drawable/menu_5_btn"
+                android:text="平台" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+       style="@style/RelativeLayout.Normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                style="@style/RelativeLayout.MenuTips">
+
+                <View
+                    style="@style/View.MenuTips"
+                    android:id="@+id/main_menu_team_tips" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/RelativeLayout.MenuTips">
+                <View
+                    style="@style/View.MenuTips"
+                    android:id="@+id/main_menu_project_tips" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/RelativeLayout.MenuTips">
+                <View
+                    style="@style/View.MenuTips"
+                    android:id="@+id/main_menu_evaluation_tips" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/RelativeLayout.MenuTips">
+                <View
+                    style="@style/View.MenuTips"
+                    android:id="@+id/main_menu_msg_tips" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/RelativeLayout.MenuTips">
+
+                <View
+                    style="@style/View.MenuTips"
+                    android:id="@+id/main_menu_platform_tips" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

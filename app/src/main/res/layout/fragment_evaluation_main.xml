@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical"
+    tools:context=".model.team.TeamMainFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        android:elevation="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评  估  团  队"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16dp"
+
+            android:layout_gravity="center"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/gallery_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp" />
+
+        <com.example.a29149.ecollaboration.widget.GalleryView
+            android:id="@+id/mygallery"
+            android:spacing="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:unselectedAlpha="128"
+            android:layout_below="@id/gallery_Title"/>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

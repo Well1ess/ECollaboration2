@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:elevation="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/bt_return"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:background="?android:attr/homeAsUpIndicator"
+                android:backgroundTint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:id="@+id/title"
+                android:layout_centerInParent="true"
+                android:text="计划一"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_captain"
+                android:gravity="center_vertical"
+                android:text="队长"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/evaluation_captain"
+                android:text="张丽华"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:elevation="2dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_myproject"
+                android:gravity="center_vertical"
+                android:text="项目"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"
+                />
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/evaluation_myproject"
+                android:text="E Collaboration App"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:elevation="2dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_creatamount"
+                android:gravity="center_vertical"
+                android:text="团队属性"
+                android:elevation="2dp"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/attribute_myproject"
+                android:text="E Collaboration App"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_members"
+                android:gravity="center_vertical"
+                android:text="小组成员"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"/>
+            <TextView
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:id="@+id/evaluation_members"
+                android:text="张丽华；林青云"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:elevation="2dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_process"
+                android:gravity="center_vertical"
+                android:text="进度"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_docamount"
+                android:gravity="center_vertical"
+                android:text="各项分数"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/evaluation_list"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="立  即  评  估"
+                    android:textColor="@color/white"
+                    android:id="@+id/evaluation_evaluation_bt"
+                    android:gravity="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

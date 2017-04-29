@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/project_info_bg"
+        android:background="@color/background">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            app:elevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/bt_return"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="?android:attr/homeAsUpIndicator"
+                    android:backgroundTint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:background="@color/lastcolorPrimary"
+                    android:id="@+id/mytitle"
+                    android:layout_centerInParent="true"
+                    android:text="项 目 一"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:transitionName="sharedView"
+                android:background="@color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="创建时间"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:id="@+id/project_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="项目要求"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:id="@+id/project_need_skill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="所获技能"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:id="@+id/project_learn_skill"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="10dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="项目描述"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:id="@+id/project_content_msg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="10dp" />
+                    </LinearLayout>
+
+                    <GridView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/project_team_list"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:verticalSpacing="5dp"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth">
+                    </GridView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/project_team_info"
+                    android:background="@color/transparent"
+                    android:layout_alignParentBottom="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="队伍名称"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="16dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:id="@+id/project_team_name"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="队伍队长"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:id="@+id/project_team_captain"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="队伍成员"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:id="@+id/project_team_numbers"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="成员简介"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="14sp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="8dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp"
+                            android:maxLines="8"
+                            android:id="@+id/project_team_numbers_info"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:background="#DEDEDE"/>
+
+    <RadioGroup
+        android:id="@+id/tab_main_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/RadioButton.Menu"
+            android:id="@+id/main_menu_edit"
+            android:drawableTop="@drawable/menu_task_edit_btn"
+            android:text="编辑" />
+
+        <RadioButton
+            style="@style/RadioButton.Menu"
+            android:id="@+id/main_menu_delete"
+            android:drawableTop="@drawable/menu_task_delete_btn"
+            android:text="删除" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a29149.ecollaboration">
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppNoBar">
+        <service
+            android:name=".MainService"
+            android:process=":main" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mainactivity.MainActivity"
+            android:hardwareAccelerated="true">
+        </activity>
+        <activity
+            android:name=".model.project.task.activity.TaskDetailActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.project.task.activity.TaskEditActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.project.task.activity.TeamSelectActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.project.manage.activity.NewProjectActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.project.apply.ApplyProjectActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.project.manage.activity.ProjectDetailActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.project.manage.activity.ProjectEditActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.team.activity.CreateTeamActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.team.activity.ApplyTeamActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.team.activity.TeamDetailActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".model.team.activity.TeamInfoActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".model.team.activity.EditTeamActivity" />
+        <activity
+            android:name=".model.team.activity.CheckPlanActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".model.message.newmessage.activity.SelectPersonActivity" />
+        <activity
+            android:name=".model.evaluation.EvaluationActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".model.evaluation.ProjectToTeamActivity" />
+        <activity android:name=".mainactivity.UserInfoEditActivity"></activity>
+    </application>
+
+</manifest>

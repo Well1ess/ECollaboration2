@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:background="@drawable/stroke_grey_1px_2dp_solid_white">
+
+    <TextView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="项目"
+        android:gravity="center"
+        android:background="@drawable/stroke_colorprimary_1px_2dp_solid_colorprimary"/>
+
+    <TextView
+        android:id="@+id/apply_project_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/apply_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_alignLeft="@id/apply_project_title"
+        android:textColor="@color/grey" />
+
+    <TextView
+        android:id="@+id/apply_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/apply_project_title"
+        android:textColor="@color/grey"
+        />
+
+</RelativeLayout>
